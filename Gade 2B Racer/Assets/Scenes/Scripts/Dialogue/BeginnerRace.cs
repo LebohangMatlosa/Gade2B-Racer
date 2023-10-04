@@ -6,14 +6,18 @@ using TMPro;
 public class BeginnerRace : MonoBehaviour
 {
     [SerializeField] private Queue<string> dialogue;
+    [SerializeField] public string Announcer;
     [SerializeField] private TextMeshProUGUI display;
+    public GameObject Text;
     void Start()
     {
         DialogueForCheeckpoint();
+        Text.GetComponent<TextMeshProUGUI>().text = "Raeez";
     }
      
     void DialogueForCheeckpoint()
     {
+        
         dialogue = new Queue<string>();
         dialogue.Enqueue("Hello");
         dialogue.Enqueue("Welcome to the time trial race");
