@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleStates : ICharacterState
+public class IdleStates :MonoBehaviour //ICharacterState
 {
     public void Enter()
     {

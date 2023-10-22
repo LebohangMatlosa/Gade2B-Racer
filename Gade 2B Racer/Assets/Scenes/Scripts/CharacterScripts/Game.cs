@@ -10,7 +10,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        character = GetComponent<character>();
+       // character = GetComponent<character>();
     }
 
     // Update is called once per frame
