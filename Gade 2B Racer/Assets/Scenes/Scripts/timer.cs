@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-//latest
+
 public class timer : MonoBehaviour
 {
-    public TextMeshProUGUI timerText;
+    /*public TextMeshProUGUI timerText;
     private float startTime;
     private bool isRaceActive = false;
     public Button startTimeButton;
@@ -81,6 +81,6 @@ public class timer : MonoBehaviour
     {
         StartRaceTimer();
         Debug.Log("The Racec Has Started");
-    }
+    }*/
 }
 
