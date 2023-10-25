@@ -16,7 +16,7 @@ public class timer : MonoBehaviour
     void TimerReset()
     {
         startTimeButton.interactable = true;
-        stopTimeButton.interactable = false;
+        stopTimeButton.interactable = false; 
         timerText.text = "Time: 0.00";
     }
 
