@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class AIagent : MonoBehaviour
 {
-    /*[SerializeField] private Transform MovePos;
+    [SerializeField] private Transform MovePos;
     private NavMeshAgent kILLA;
 
     private void Awake()
@@ -15,5 +15,5 @@ public class AIagent : MonoBehaviour
     private void Update()
     {
         kILLA.destination = MovePos.position;
-    }*/
+    }
 }
