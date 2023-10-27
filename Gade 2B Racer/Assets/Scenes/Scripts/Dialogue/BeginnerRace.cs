@@ -23,11 +23,11 @@ public class BeginnerRace : MonoBehaviour
     {
         
         //dialogue = new Queue<string>();
-        dialogue.queue.Enqueue("Hello");
+        /*dialogue.queue.Enqueue("Hello");
         dialogue.queue.Enqueue("Welcome to the time trial race");
         dialogue.queue.Enqueue("You will have to beat the race and cross the finish line before the timer runs out");
         dialogue.queue.Enqueue("To start press the start timer button when you are ready to go ");
-        dialogue.queue.Enqueue("Good Luck!!");
+        dialogue.queue.Enqueue("Good Luck!!");*/
         dialogue.list = new List<string>(dialogue.queue);
         var Json = JsonUtility.ToJson(dialogue);
         
