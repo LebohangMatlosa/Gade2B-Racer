@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
         }
         string sentence = dialogueSentences.Dequeue();
         Debug.Log(sentence);
-        StopAllCoroutine();
+        //StopAllCoroutine();
         StartCoroutine(typeSentence(sentence));
 
         IEnumerator typeSentence(string sentence)
