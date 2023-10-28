@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (var dialogueSentence in announcerDialogue.announcerName)
         {
-            dialogueSentences.Enqueue(dialogueSentence);
+            //dialogueSentences.Enqueue(dialogueSentence);
         }
         displayNextSentence();
     }
