@@ -16,7 +16,7 @@ public class checkpointTrigger : MonoBehaviour
         {
             checkpointStack.checkpointStack.Pop();
             checkpointStack.IncreaseTimer(5.0f);
-            
+            Debug.Log("collision detected");
         }
 
         /*if (checkpointQueue.Count>0)

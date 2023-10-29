@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Found announcer: " + announcer.npcName + "'" + announcer.npcDialogue + "'");
             displayName.text = announcer.npcName;
             //dialogueSentences.Clear();
-            dialogueSentences.Enqueue(announcer.npcName);
+            dialogueSentences.Enqueue(announcer.npcDialogue);
             
 
         }

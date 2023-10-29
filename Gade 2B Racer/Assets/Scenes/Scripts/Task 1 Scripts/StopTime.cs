@@ -6,6 +6,6 @@ public class StopTime : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GameObject.Find("Car").SendMessage("Finish");
+        GameObject.Find("Police car").SendMessage("Finish");
     }
 }
