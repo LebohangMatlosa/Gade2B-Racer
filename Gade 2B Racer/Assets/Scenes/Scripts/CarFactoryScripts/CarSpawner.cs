@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CarSpawner : CarFactory
+public class CarSpawner : MonoBehaviour
 {
-    [SerializeField] private CarSpawner[] carFactories;
+    [SerializeField] private CarFactory[] carFactories;
 
     private void Start()
     {
