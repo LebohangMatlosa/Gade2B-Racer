@@ -9,22 +9,34 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI displayName;
     public TextMeshProUGUI displayDialogue;
     public Queue<string> dialogueSentences;
+    public TextAsset jsonFile;
     // Start is called before the first frame update
     void Start()
     {
         dialogueSentences = new Queue<string>();
+        NonPlayerCharacters announcerInJSON = JsonUtility.FromJson<NonPlayerCharacters>(jsonFile.text);
+        foreach (nonPlayer announcer in announcerInJSON.npcCharacters)
+        {
+            Debug.Log("Found announcer: " + announcer.npcName + "'" + announcer.npcDialogue + "'");
+            displayName.text = announcer.npcName;
+            //dialogueSentences.Clear();
+            dialogueSentences.Enqueue(announcer.npcName);
+            
+
+        }
+        displayNextSentence();
     }
 
-    public void startDialogue(Dialogue announcerDialogue)
+    public void startDialogue(nonPlayer announcerDialogue)
     {
-        Debug.Log("Starting conversation with " + announcerDialogue.announcerName);
-        displayName.text = announcerDialogue.announcerName;
-        dialogueSentences.Clear();
+        Debug.Log("Starting conversation with " +announcerDialogue.npcName);
+        /*displayName.text = announcerDialogue.announcerName;
+        dialogueSentences.Clear();*/
 
-        foreach (var dialogueSentence in announcerDialogue.announcerName)
+        /*foreach (var dialogueSentence in announcerDialogue.announcerName)
         {
             //dialogueSentences.Enqueue(dialogueSentence);
-        }
+        }*/
         displayNextSentence();
     }
 
@@ -38,9 +50,9 @@ public class DialogueManager : MonoBehaviour
         string sentence = dialogueSentences.Dequeue();
         Debug.Log(sentence);
         //StopAllCoroutine();
-        StartCoroutine(typeSentence(sentence));
+        //StartCoroutine(typeSentence(sentence));
 
-        IEnumerator typeSentence(string sentence)
+        /*IEnumerator typeSentence(string sentence)
         {
             displayDialogue.text = "";
             foreach (char letter in sentence.ToCharArray())
@@ -48,7 +60,7 @@ public class DialogueManager : MonoBehaviour
                 displayDialogue.text += letter;
                 yield return new WaitForSeconds(0.15f);
             }
-        }
+        }*/
     }
 
     public void endDialogue()

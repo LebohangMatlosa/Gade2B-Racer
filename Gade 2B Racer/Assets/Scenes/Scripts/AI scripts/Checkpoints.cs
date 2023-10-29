@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Checkpoints : MonoBehaviour
 {
-    public Vector3 position;
-    public int checkpointID;
-
-    public Checkpoints(Vector3 position, int checkpointID)
-    {
-        this.position = position;
-        this.checkpointID = checkpointID;
-    }
+    public Transform checkpointPosition;
+    public Checkpoints nextCheckpoint;
+    public Checkpoints previousCheckpoint;
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LinkedListScript : MonoBehaviour
 {
-    private LinkedList<Checkpoints> checkpoints = new LinkedList<Checkpoints>();
+   /* private LinkedList<Checkpoints> checkpoints = new LinkedList<Checkpoints>();
     private LinkedListNode<Checkpoints> currentCheckpoints;
 
     public void CreateCheckpoints(Vector3 position)
@@ -35,6 +35,6 @@ public class LinkedListScript : MonoBehaviour
             return next.Value.position;
         }
         return Vector3.zero;
-    }
+    }*/
     
 }

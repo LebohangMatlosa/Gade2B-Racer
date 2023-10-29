@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimerCheckpoints : MonoBehaviour
 {
-    public float timeIncrease = 10.0f;
+    /*public float timeIncrease = 10.0f;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -17,5 +17,5 @@ public class TimerCheckpoints : MonoBehaviour
                 checkpointStack.passCheckpoint();
             }
         }
-    }
+    }*/
 }

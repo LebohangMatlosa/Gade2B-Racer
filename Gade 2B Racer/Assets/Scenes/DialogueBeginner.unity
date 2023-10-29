@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -341,8 +341,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1369362464}
-        m_TargetAssemblyTypeName: BeginnerRace, Assembly-CSharp
-        m_MethodName: nextSentence
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: displayNextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -908,14 +908,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1369362462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9ea2b9432f406c4985ab42a51d413d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bca71e54082506418da3ef52642e435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    list: []
-  Announcer: Raeez
-  display: {fileID: 2034094402}
-  Text: {fileID: 2034094401}
+  displayName: {fileID: 1829490480}
+  displayDialogue: {fileID: 2034094402}
+  jsonFile: {fileID: 0}
 --- !u!1 &1495948537
 GameObject:
   m_ObjectHideFlags: 0

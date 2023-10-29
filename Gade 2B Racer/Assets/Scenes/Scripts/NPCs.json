@@ -1,0 +1,33 @@
+{
+  "npcCharacters":[
+
+    {
+      "npcName": "Raeez",
+      "npcDialogue": [
+        "The race is about to begin",
+        "reach the end of the track before the time runs out",
+        "hit the bubbles to increase your time",
+        "good luck "
+      ]
+    },
+    {
+      "npcName": "Bob",
+      "npcDialogue": "Hello"
+    },
+    {
+      "announcerName": "Frank",
+      "npcDialogue": "Howdy"
+    },
+    {
+      "npcName": "Example",
+      "npcDialogue": [
+        "The race is about to begin",
+        "Do you know the rules",
+        "they are simple",
+        "make sure you reach the end before the timer runs out"
+      ]
+    }
+
+
+  ]
+}
