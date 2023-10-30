@@ -520,6 +520,7 @@ MonoBehaviour:
   - {fileID: 131181292}
   - {fileID: 1345321869}
   - {fileID: 660865609}
+  - {fileID: 868016088}
   currentCheckpointIndex: 0
 --- !u!1 &660865607
 GameObject:
@@ -599,6 +600,7 @@ MonoBehaviour:
   - {fileID: 131181292}
   - {fileID: 1345321869}
   - {fileID: 660865609}
+  - {fileID: 868016088}
   currentCheckpointIndex: 0
 --- !u!114 &721157823
 MonoBehaviour:
@@ -1434,6 +1436,7 @@ MonoBehaviour:
   - {fileID: 131181292}
   - {fileID: 1345321869}
   - {fileID: 660865609}
+  - {fileID: 868016088}
   currentCheckpointIndex: 0
 --- !u!114 &8911323236468508375
 MonoBehaviour:
