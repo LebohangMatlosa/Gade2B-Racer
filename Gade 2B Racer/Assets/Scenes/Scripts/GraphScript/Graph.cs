@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Graph : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public List<Node> Nodes { get; set; } 
+    public List<Edge> Edges { get; set; }
+    
+    public Graph()
     {
-        
+        Nodes = new List<Node>();
+        Edges = new List<Edge>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddNode(Node node)
     {
-        
+        Nodes.Add(node);
+    }
+
+    public void AddEdge(Node nodeA, Node nodeB, float cost)
+    {
+        Edges.Add(new Edge(nodeA, nodeB, cost));
+        Edges.Add(new Edge(nodeB, nodeB, cost));
     }
 }
