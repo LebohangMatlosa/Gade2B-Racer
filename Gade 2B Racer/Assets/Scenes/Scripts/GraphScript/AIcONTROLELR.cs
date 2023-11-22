@@ -16,7 +16,7 @@ public class AIcONTROLELR : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        Node[] nodes = FindObjectOfType<Node>();
+        Node[] nodes = FindObjectsOfType<Node>();
         graph = new Graph();
         graph.Nodes.Clear();
         graph.Nodes.AddRange(nodes);
@@ -34,7 +34,7 @@ public class AIcONTROLELR : MonoBehaviour
     {
         Node startNode = null;
         Node endNode = null;
-        Node[]nodes = FindObjectOfType<Node>();
+        Node[]nodes = FindObjectsOfType<Node>();
 
         foreach(Node node in nodes)
         {
@@ -53,6 +53,7 @@ public class AIcONTROLELR : MonoBehaviour
             waypoints = CalculatePath(startNode, endNode);
             currentWayPointIndex = 0;
         }
+
         List<Node> CalculatePath(Node start, Node end)
         {
             List<Node> path = new List<Node>();
@@ -84,11 +85,53 @@ public class AIcONTROLELR : MonoBehaviour
                 int randomIndex = Random.Range(0, possibilities.Count);
                 Debug.Log(randomIndex);
             }
+            return path;
         }
     }
     // Update is called once per frame
     void Update()
     {
+        if (waypoints.Count ==0 )
+        {
+            return;
+        }
+        if (currentWayPointIndex < waypoints.Count)
+        {
+            agent.SetDestination(waypoints[currentWayPointIndex].Position);
+        }
+        if (Vector3.Distance(transform.position, waypoints[currentWayPointIndex].Position) < agent.stoppingDistance)
+        {
+            currentWayPointIndex++;
+        }
+    }
+    Node FindNearestNode(Vector3 position)
+    {
+        Node nearestNode = null;
+        float nearestDistance = float.MaxValue;
+
+        foreach(Node node in graph.Nodes)
+        {
+            float distance = Vector3.Distance(position, node.Position);
+            if (distance<nearestDistance)
+            {
+                nearestNode = node;
+                nearestDistance = distance;
+            }
+        }
+        return nearestNode;
+    }
+
+    public Node findMe(int ID)
+    {
+        Node[] nodes = FindObjectsOfType<Node>();
+        foreach (Node node in nodes)
         
+            if (node.ID == ID)
+           
+                return node;
+
+        return null;
     }
 }
+
+
