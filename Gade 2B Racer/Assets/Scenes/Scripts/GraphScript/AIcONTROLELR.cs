@@ -21,11 +21,11 @@ public class AIcONTROLELR : MonoBehaviour
         graph.Nodes.Clear();
         graph.Nodes.AddRange(nodes);
 
-        new Edge(findMe(2), findMe(1), 0);
-        new Edge(findMe(2), findMe(3), 0);
-        new Edge(findMe(3), findMe(4), 0);
-        new Edge(findMe(1), findMe(4), 0);
-        new Edge(findMe(4), findMe(0), 0);
+        new Edge(findMe(1), findMe(2), findMe(3), findMe(4), findMe(5), findMe(6), findMe(7), 0);
+        new Edge(findMe(2), findMe(3), findMe(4), findMe(5), findMe(6), findMe(7), findMe(1), 0);
+        new Edge(findMe(3), findMe(4), findMe(5), findMe(6), findMe(7), findMe(1), findMe(2), 0);
+        new Edge(findMe(4), findMe(5), findMe(6), findMe(7), findMe(1), findMe(2), findMe(3), 0);
+        new Edge(findMe(5), findMe(6), findMe(7), findMe(1), findMe(2), findMe(3), findMe(4), 0);
         CalculatePathToDestination();
         
 

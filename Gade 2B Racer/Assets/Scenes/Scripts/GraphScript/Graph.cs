@@ -18,9 +18,9 @@ public class Graph : MonoBehaviour
         Nodes.Add(node);
     }
 
-    public void AddEdge(Node nodeA, Node nodeB, float cost)
+    public void AddEdge(Node nodeA, Node nodeB, Node nodeC, Node nodeD, Node nodeE, Node nodeF, Node nodeG, float cost)
     {
-        Edges.Add(new Edge(nodeA, nodeB, cost));
-        Edges.Add(new Edge(nodeB, nodeB, cost));
+        Edges.Add(new Edge(nodeA, nodeB,nodeC, nodeD, nodeE,  nodeF,  nodeG, cost));
+        Edges.Add(new Edge(nodeB, nodeB,nodeC, nodeD, nodeE, nodeF, nodeG, cost));
     }
 }
