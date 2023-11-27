@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 113677439}
   - component: {fileID: 113677438}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: Maserati
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4625ded04c4c2f243a666b28c21a9913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathCheckpoints: []
+  PathCheckpoints:
+  - {fileID: 1341998076}
+  - {fileID: 203248992}
+  - {fileID: 2109411704}
+  - {fileID: 1401215632}
+  - {fileID: 2118630532}
+  - {fileID: 1232540692}
+  - {fileID: 303534297}
   currentCheckpointIndex: 0
 --- !u!54 &113677439
 Rigidbody:
@@ -334,7 +341,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 9
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -376,7 +383,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113677437}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -427,13 +434,144 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113677437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -403.04, y: 38.01, z: 566.35}
+  m_LocalRotation: {x: -0, y: 0.6783144, z: -0, w: -0.7347718}
+  m_LocalPosition: {x: -415.33768, y: 34.23, z: 573.178}
   m_LocalScale: {x: 2.7325, y: 2.7325, z: 2.7325}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 583176518}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -445.424, z: 0}
+--- !u!1 &152346435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152346436}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152346436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152346435}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -612.37463, y: -268.43762, z: 604.88824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1341998076}
+  - {fileID: 203248992}
+  - {fileID: 2109411704}
+  - {fileID: 1401215632}
+  - {fileID: 2118630532}
+  - {fileID: 1232540692}
+  - {fileID: 303534297}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &203248991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203248992}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &203248992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203248991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 401.9, y: 301.3, z: -40.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &303534296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303534297}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303534297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303534296}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 976, y: 301.3, z: -1144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &321893217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321893218}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &321893218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321893217}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 745.7, y: -3.4000015, z: -585.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &387015022
 PrefabInstance:
@@ -504,6 +642,45 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02ac3e8b95e502246987a396c77cb536, type: 3}
+--- !u!1 &449129451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 449129452}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449129452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449129451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -389.7, y: 32.9, z: 552.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 741570185}
+  - {fileID: 1867947445}
+  - {fileID: 1349090880}
+  - {fileID: 1043559972}
+  - {fileID: 1889955863}
+  - {fileID: 1133478400}
+  - {fileID: 321893218}
+  - {fileID: 1824801779}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &499760901
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +696,10 @@ GameObject:
   - component: {fileID: 499760904}
   - component: {fileID: 499760903}
   - component: {fileID: 499760902}
+  - component: {fileID: 499760909}
+  - component: {fileID: 499760910}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: KillaMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -538,7 +717,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4625ded04c4c2f243a666b28c21a9913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathCheckpoints: []
+  PathCheckpoints:
+  - {fileID: 1272449290}
+  - {fileID: 1296760110}
+  - {fileID: 1429438780}
+  - {fileID: 591211447}
+  - {fileID: 1557875173}
+  - {fileID: 2031890344}
+  - {fileID: 533538477}
   currentCheckpointIndex: 0
 --- !u!54 &499760903
 Rigidbody:
@@ -577,7 +763,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -619,7 +805,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499760901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -670,13 +856,86 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499760901}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -403.04, y: 38.01, z: 581.16}
+  m_LocalRotation: {x: -0, y: -0.08995836, z: -0, w: 0.9959455}
+  m_LocalPosition: {x: -388.9, y: 34.6, z: 581.8}
   m_LocalScale: {x: 2.7325, y: 2.7325, z: 2.7325}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2028727469}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -10.322, z: 0}
+--- !u!114 &499760909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499760901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4625ded04c4c2f243a666b28c21a9913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PathCheckpoints: []
+  currentCheckpointIndex: 0
+--- !u!114 &499760910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499760901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e310e6e6e5c904e8b15698fc8cc935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 
+    clip: {fileID: 0}
+    pitch: 0
+    volume: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    pitch: 0
+    volume: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    pitch: 0
+    volume: 0
+    source: {fileID: 0}
+--- !u!1 &533538476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533538477}
+  m_Layer: 0
+  m_Name: GameObject (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533538477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533538476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 754.3, y: -42.3, z: -1108.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560956016
 GameObject:
@@ -693,8 +952,9 @@ GameObject:
   - component: {fileID: 560956019}
   - component: {fileID: 560956018}
   - component: {fileID: 560956017}
+  - component: {fileID: 560956024}
   m_Layer: 0
-  m_Name: Capsule (2)
+  m_Name: Tonka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +972,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4625ded04c4c2f243a666b28c21a9913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathCheckpoints: []
+  PathCheckpoints:
+  - {fileID: 741570185}
+  - {fileID: 1867947445}
+  - {fileID: 1349090880}
+  - {fileID: 1043559972}
+  - {fileID: 1889955863}
+  - {fileID: 1133478400}
+  - {fileID: 321893218}
+  - {fileID: 1824801779}
   currentCheckpointIndex: 0
 --- !u!54 &560956018
 Rigidbody:
@@ -751,7 +1019,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 9
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -793,7 +1061,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560956016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -844,14 +1112,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560956016}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -406, y: 38.01, z: 552.58}
+  m_LocalRotation: {x: -0, y: -0.7186744, z: -0, w: -0.69534683}
+  m_LocalPosition: {x: -427.29584, y: 34.1, z: 555.3446}
   m_LocalScale: {x: 2.7325, y: 2.7325, z: 2.7325}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1529228859}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -268.11, z: 0}
+--- !u!114 &560956024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560956016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4625ded04c4c2f243a666b28c21a9913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PathCheckpoints: []
+  currentCheckpointIndex: 0
 --- !u!1001 &583176517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -862,7 +1144,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.0499873
+      value: 7.049989
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalScale.y
@@ -870,11 +1152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.598163
+      value: 7.5981655
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19396111
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalPosition.y
@@ -882,11 +1164,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2159293
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70684505
+      value: 0.04600921
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalRotation.x
@@ -894,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70736843
+      value: 0.998941
       objectReference: {fileID: 0}
     - target: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
       propertyPath: m_LocalRotation.z
@@ -916,7 +1198,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maserati
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5464614431054338631, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
+    - {fileID: 7036876197482265354, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -926,6 +1210,385 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 908368590666545873, guid: aaeb753f3a8fb994ca40272bc03369ca, type: 3}
   m_PrefabInstance: {fileID: 583176517}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &591211446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 591211447}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &591211447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591211446}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 506.3, y: -42.3, z: -406.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &741570184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741570185}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741570185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741570184}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 54, y: -3.4000015, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &987277353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987277354}
+  m_Layer: 0
+  m_Name: KillaMachinesCheckPoitns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987277354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987277353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -372.3, y: 73, z: 580.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1272449290}
+  - {fileID: 1296760110}
+  - {fileID: 1429438780}
+  - {fileID: 591211447}
+  - {fileID: 1557875173}
+  - {fileID: 2031890344}
+  - {fileID: 533538477}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1043559971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043559972}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043559972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043559971}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 378.6, y: -3.4000015, z: -375.09998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1133478399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1133478400}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1133478400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133478399}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 519.1, y: -3.4000015, z: -585.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1232540691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232540692}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1232540692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232540691}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 986, y: 301.3, z: -638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1272449289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272449290}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1272449290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272449289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 61.1, y: -42.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1296760109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296760110}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296760110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296760109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 388, y: -42.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1341998075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341998076}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341998076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341998075}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 211.3, y: 301.3, z: -33.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349090879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349090880}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1349090880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349090879}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 378.6, y: -3.4000015, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1401215631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401215632}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401215632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401215631}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 752, y: 301.3, z: -425.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1429438779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429438780}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1429438780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429438779}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 371, y: -42.3, z: -406.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1529228858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -948,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.88564074
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -956,11 +1619,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.106121875
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7105154
+      value: 0.9997411
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -968,7 +1631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70368177
+      value: -0.02275574
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -980,7 +1643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 89.446
+      value: -2.608
       objectReference: {fileID: 0}
     - target: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -990,7 +1653,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tonka
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8746725441407861878, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
+    - {fileID: 7627309628487156666, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1000,6 +1665,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5042595648263388092, guid: db641b9e148552446afe7f318c2ff53c, type: 3}
   m_PrefabInstance: {fileID: 1529228858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1557875172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557875173}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557875173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557875172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 506.3, y: -42.3, z: -620}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774790061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1790,99 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1824801778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824801779}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824801779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824801778}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 741.7, y: -3.4000015, z: -1092.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1867947444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867947445}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867947445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867947444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 192.6, y: -3.4000015, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889955862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889955863}
+  m_Layer: 0
+  m_Name: TonkaCheckpoints (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1889955863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889955862}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 519.1, y: -3.4000015, z: -375.09998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 449129452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2028727468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1108,7 +1897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.0124714
+      value: 3.012472
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalScale.y
@@ -1116,11 +1905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.0124714
+      value: 3.012472
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1482762
+      value: 0.7190016
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1128,11 +1917,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.61195976
+      value: 1.0844691
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7006618
+      value: 0.9983773
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1140,7 +1929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7134936
+      value: 0.056945592
       objectReference: {fileID: 0}
     - target: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1168,6 +1957,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6881551535903791476, guid: 4892384ff22fe0b41ae41ad70bc3e574, type: 3}
   m_PrefabInstance: {fileID: 2028727468}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2031890343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031890344}
+  m_Layer: 0
+  m_Name: GameObject (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2031890344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031890343}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 741, y: -42.3, z: -600}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987277354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2100090639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1277,6 +2097,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5351ec5e9bb949a4a89e4cf1a3f5069d, type: 3}
+--- !u!1 &2109411703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109411704}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109411704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109411703}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 401.9, y: 301.3, z: -425.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2118630531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2118630532}
+  m_Layer: 0
+  m_Name: MaseratiCheckpoints (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2118630532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118630531}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 752, y: 301.3, z: -638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 152346436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1286,5 +2168,8 @@ SceneRoots:
   - {fileID: 30390216}
   - {fileID: 2100090639}
   - {fileID: 499760908}
-  - {fileID: 113677444}
   - {fileID: 560956023}
+  - {fileID: 987277354}
+  - {fileID: 152346436}
+  - {fileID: 449129452}
+  - {fileID: 113677444}
