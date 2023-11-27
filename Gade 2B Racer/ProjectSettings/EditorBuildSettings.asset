@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Part3groupTrack.unity
+    guid: c9efd1ec8e1a47b4d8f5c4b7ef61475b
+  - enabled: 1
+    path: Assets/Scenes/LebosFinalRace.unity
+    guid: 1c132b8c329c9e94c89a2229d56b454f
+  - enabled: 1
+    path: Assets/Scenes/FinalAdvancedRacec.unity
+    guid: 48d3f71d53096b0498300f78c9124857
   m_configObjects: {}

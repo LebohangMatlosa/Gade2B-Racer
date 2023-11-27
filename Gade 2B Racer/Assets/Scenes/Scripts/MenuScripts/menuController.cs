@@ -35,5 +35,19 @@ public class menuController : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    
+    public void loadAdvancedRace()
+    {
+        SceneManager.LoadScene(4);
+    }
 
+    public void loadLebosRace()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void loadRaeezsRace()
+    {
+        SceneManager.LoadScene(6);
+    }
 }
